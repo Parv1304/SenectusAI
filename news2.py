@@ -4,7 +4,7 @@ from google.genai import types
 
 def generate():
     client = genai.Client(
-        api_key=("AIzaSyCa_b_4E_vVhlTrI8Gbu_Zf7bQY74hLLK4"),
+        api_key=("[API KEY HERE]"),
     )
 
     model = "gemini-2.0-flash"
@@ -36,13 +36,3 @@ def generate():
     ):
         s += chunk.text
     return s
-
-'''items = generate()
-
-#items = items.partition(":")
-
-""" items = items.split("}")
-items.pop(0)
- """
-l=items.split("**")
-print(l)'''
