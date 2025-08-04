@@ -6,7 +6,7 @@ from google.genai import types
 
 def generate(history):
     client = genai.Client(
-        api_key="AIzaSyA3CIQ94sdwOf0NwIaXKcAeatOI6acYPhQ",
+        api_key="[API KEY HERE]",
     )
 
     model = "gemini-2.0-flash"
@@ -37,3 +37,4 @@ while user!='Quit':
     if user!='Quit':
         history+=[types.Content(role="user",parts=[types.Part.from_text(text=user)])]
 '''
+
